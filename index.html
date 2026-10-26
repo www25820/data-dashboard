@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>数据看板</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+
+    <header class="topbar">
+      <h1>数据看板</h1>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="切换主题">
+        <span id="theme-icon"></span>
+        <span id="theme-label">深色模式</span>
+      </button>
+    </header>
+
+    <div class="layout">
+      <main>
+        <section class="cards-section" aria-labelledby="cards-title">
+          <h2 id="cards-title">核心指标</h2>
+          <div class="cards-grid" id="cards-grid"></div>
+        </section>
+      </main>
+
+      <aside class="sidebar" aria-labelledby="activity-title">
+        <h2 id="activity-title">最近动态</h2>
+        <ul class="activity-list">
+          <li>
+            <span class="activity-dot"></span>
+            <div>
+              新用户注册量较昨日增长 12.4%
+              <time datetime="2026-10-26T09:30">09:30</time>
+            </div>
+          </li>
+          <li>
+            <span class="activity-dot"></span>
+            <div>
+              华东区服务器完成例行巡检
+              <time datetime="2026-10-26T09:12">09:12</time>
+            </div>
+          </li>
+          <li>
+            <span class="activity-dot"></span>
+            <div>
+              本月累计订单突破 12 万单
+              <time datetime="2026-10-26T08:45">08:45</time>
+            </div>
+          </li>
+          <li>
+            <span class="activity-dot"></span>
+            <div>
+              转化率连续 7 天保持上升趋势
+              <time datetime="2026-10-26T08:20">08:20</time>
+            </div>
+          </li>
+        </ul>
+      </aside>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
